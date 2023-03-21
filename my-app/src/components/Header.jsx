@@ -17,11 +17,11 @@ export function Header(){
   const handleSignOut = () => {
     dispatch(signOut())
     removeCookie('token')
-    navigate('/login')
+    navigate('/React.js3/login')
   }
 
   const handleLogin=()=>{
-    navigate('/login')
+    navigate('/React.js3/login')
   }
 
 
@@ -48,7 +48,7 @@ export function Header(){
       {auth ? (
         <>
           <p>{userdata.name} さん</p>
-          <button onClick={()=>{navigate('/profile')}} className="edit-button">ユーザー情報編集</button>
+          <button onClick={()=>{navigate('/React.js3/profile')}} className="edit-button">ユーザー情報編集</button>
           <button onClick={handleSignOut} className="signout-button">
           サインアウト
           </button>

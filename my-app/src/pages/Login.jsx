@@ -25,7 +25,7 @@ export function Login() {
           setCookie('token', res.data.token)
           console.log(cookies)
           dispatch(signIn())
-          navigate('/')
+          navigate('/React.js3')
         })
         .catch((err) => {
           setErrorMessage(`サインインに失敗しました。${err}`)

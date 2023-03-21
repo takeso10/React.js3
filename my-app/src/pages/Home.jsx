@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom'
 export function Home () {
     const navigate = useNavigate()
     const createReview=()=>{
-      navigate('/new')
+      navigate('/React.js3/new')
     }
 
     return(
@@ -77,10 +77,10 @@ export const Reviews =()=>{
       .then((res)=>{
         console.log(res.data)
         if (res.data.isMine){
-          navigate(`/edit/${res.data.id}`,{state:{reviewData:res.data}})
+          navigate(`/React.js3/edit/${res.data.id}`,{state:{reviewData:res.data}})
         }
         else{
-          navigate(`/detail/${res.data.id}`,{state:{reviewData:res.data}})
+          navigate(`/React.js3/detail/${res.data.id}`,{state:{reviewData:res.data}})
         }
         axios
             .post(`${url}logs`,{selectBookId:res.data.id},{

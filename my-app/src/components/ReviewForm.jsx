@@ -21,7 +21,7 @@ export function ReviewForm(props){
                 authorization:`Bearer ${cookies.token}`
             }})
             .then(()=>{
-                navigate('/')
+                navigate('/React.js3')
             })
             .catch((err)=>{
                 setErrorMessage(`レビューの投稿に失敗しました。 ${err}`)

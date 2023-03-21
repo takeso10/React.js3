@@ -62,7 +62,7 @@ export function SignUp() {
             })
 
         if (auth)
-            return <Navigate to="/" replace />
+            return <Navigate to="/React.js3" replace />
     }
    
     const fileSet =(e)=>{
@@ -133,7 +133,7 @@ export function SignUp() {
                     <br />
                     <button type="submit"  className="signup-button">作成</button>
                 </form>
-                <Link to="/login" className="login">ログイン</Link>
+                <Link to="/React.js3/login" className="login">ログイン</Link>
             </main>
         </div>
     )
