@@ -18,20 +18,20 @@ export const Router = () => {
           <Routes>
             {auth ?(
               <>
-                <Route path="React.js3" element={<Home />} />
-                <Route path="React.js3/signup" element={<Navigate replace to="/"/>} />
-                <Route path="React.js3/login" element={<Navigate replace to="/"/>} />
-                <Route path='React.js3/profile' element={<Profile/>}/>
-                <Route path='React.js3/new' element={<NewReview/>}/>
-                <Route path='React.js3/detail/:id' element={<ReviewDetail/>}/>
-                <Route path='React.js3/edit/:id' element={<EditReview/>}/>
+                <Route path="/React.js3" element={<Home />} />
+                <Route path="/React.js3/signup" element={<Navigate replace to="/"/>} />
+                <Route path="/React.js3/login" element={<Navigate replace to="/"/>} />
+                <Route path='/React.js3/profile' element={<Profile/>}/>
+                <Route path='/React.js3/new' element={<NewReview/>}/>
+                <Route path='/React.js3/detail/:id' element={<ReviewDetail/>}/>
+                <Route path='/React.js3/edit/:id' element={<EditReview/>}/>
               </>
             ):(
               <>
-                <Route path="React.js3" element={<Navigate replace to="/login" />} />
-                <Route path="React.js3/login" element={<Login />} />
-                <Route path="React.js3/signup" element={<SignUp />} />
-                <Route path='React.js3/profile' element={<Navigate replace to="/"/>}/>
+                <Route path="/React.js3" element={<Navigate replace to="/login" />} />
+                <Route path="/React.js3/login" element={<Login />} />
+                <Route path="/React.js3/signup" element={<SignUp />} />
+                <Route path='/React.js3/profile' element={<Navigate replace to="/"/>}/>
               </>
             )}
             <Route component={NotFound} />
