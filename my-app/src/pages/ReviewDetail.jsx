@@ -24,7 +24,6 @@ export function ReviewDetail (){
         :(
         <main>
             <h2>レビュー詳細</h2>
-            <p className="error-message">{errorMessage}</p>
             <div className='review'>
                 <label htmlFor="title" className='titleLabel'></label>
                 <h1 className='review-title'>{resData.title}</h1>

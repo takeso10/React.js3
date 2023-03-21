@@ -29,7 +29,7 @@ export function ReviewForm(props){
         }
         else{
             axios 
-            .put(`${url}books/${props.bookData.reviewData.reviewid}`,data,{
+            .put(`${url}books/${props.bookData.reviewData.id}`,data,{
                 headers:{
                     authorization:`Bearer ${cookies.token}`
                 }})

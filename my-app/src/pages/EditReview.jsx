@@ -33,7 +33,6 @@ export function EditReview(){
     return(
         <>
             <Header/>
-            <p className='error-message'>{errorMessage}</p>
             <ReviewForm bookData={state}/>
         </>
     )
