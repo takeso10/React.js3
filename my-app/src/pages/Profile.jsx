@@ -4,10 +4,13 @@ import { url } from '../const'
 import { Header } from '../components/Header'
 import { useCookies } from 'react-cookie'
 import {useForm} from 'react-hook-form';
+import { useNavigate } from 'react-router-dom'
+
 import './Profile.scss'
 
 export function Profile(){
     const [errorMessage, setErrorMessage] = useState('')
+    const navigate = useNavigate()
     const [name,setName]=useState('')
     const [cookies, setCookie] = useCookies()
     const {register, handleSubmit,formState: { errors }}=useForm();
@@ -38,6 +41,7 @@ export function Profile(){
             .catch((err) => {
                 setErrorMessage(`サインアップに失敗しました。 ${err}`)
             })
+            navigate('/')
     }
    
     return(

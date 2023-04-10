@@ -21,7 +21,7 @@ export function ReviewForm(props){
                 authorization:`Bearer ${cookies.token}`
             }})
             .then(()=>{
-                navigate('/React.js3')
+                navigate('/')
             })
             .catch((err)=>{
                 setErrorMessage(`レビューの投稿に失敗しました。 ${err}`)
@@ -34,7 +34,7 @@ export function ReviewForm(props){
                     authorization:`Bearer ${cookies.token}`
                 }})
             .then(()=>{
-                navigate('/React.js3')
+                navigate('/')
             })
             .catch((err)=>{
                 setErrorMessage(`レビューの更新に失敗しました。 ${err}`)
@@ -51,7 +51,7 @@ export function ReviewForm(props){
                     authorization:`Bearer ${cookies.token}`
             }})
             .then(()=>{
-                navigate('/React.js3')
+                navigate('/')
             })
             .catch((err)=>{
                 setErrorMessage(`レビューの更新に失敗しました。 ${err}`)

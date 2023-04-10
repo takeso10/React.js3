@@ -62,7 +62,7 @@ export function SignUp() {
             })
 
         if (auth)
-            return <Navigate to="/React.js3" replace />
+            return <Navigate to="/" replace />
     }
    
     const fileSet =(e)=>{
